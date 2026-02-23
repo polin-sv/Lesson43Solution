@@ -26,6 +26,7 @@ int main() {
 
 	print("index of last element - " + to_string(get_last_element(array, length, value)) + "\n");
 
+	print("count of searching element is " + to_string(count_element(array, length, value)) + "\n");
 
 
 	return 0;

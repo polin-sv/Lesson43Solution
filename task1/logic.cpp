@@ -32,3 +32,15 @@ int get_last_element(int array[DEFAULT_SIZE], int length, int value) {
 
 	return -1;
 }
+
+int count_element(int array[DEFAULT_SIZE], int length, int value) {
+	int count = 0;
+
+	for (int index = 0; index < length; index++)
+	{
+		if (array[index] == value) {
+			count++;
+		}
+	}
+	return count;
+}
