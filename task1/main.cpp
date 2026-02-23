@@ -4,7 +4,7 @@ int main() {
 	int array[DEFAULT_SIZE];
 
 	int length;
-	int a = -20, b = 20;
+	int a = 0, b = 20;
 
 	do {
 		cout << "input size of array: ";
@@ -15,6 +15,18 @@ int main() {
 
 	print("result array:\n");
 	print(convert(array, length) + "\n");
+
+	int value = 17;
+
+	bool result = search_linear(array, length, value);
+
+	print(result ? "yes" : "no");
+
+	print("index of first element - " + to_string(get_first_element(array, length, value)) + "\n");
+
+	print("index of last element - " + to_string(get_last_element(array, length, value)) + "\n");
+
+
 
 	return 0;
 }
